@@ -13,11 +13,16 @@ A simple CLI tool to quickly set up frontend and backend project structures in V
 ## Installation
 
 To install the Development Setup CLI globally, run the following command or:
-If you don't want to install CLI globally then you can use **npx** :
+If you prefer not to install it globally, use **npx**:
 
-```bash
-npx development-setup
+- - npx development-setup
 
-npm install -g development-setup
+- - npm install -g development-setup
 
+## Created By  
+
+👤 **Aniket Savita** – *Software Developer*  
+
+🔗 [LinkedIn](https://www.linkedin.com/in/your-profile)  
+🔗 [GitHub](https://github.com/your-profile)  
 
