@@ -1,6 +1,6 @@
 {
   "name": "development-setup",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "A CLI tool to set up frontend and backend project structure",
   "main": "index.js",
   "bin": {
