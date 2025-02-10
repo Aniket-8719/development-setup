@@ -1,6 +1,6 @@
 {
   "name": "development-setup",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A CLI tool to set up frontend and backend project structure",
   "main": "index.js",
   "bin": {
@@ -16,10 +16,18 @@
     "start": "node ./bin/cli.js"
   },
   "keywords": [
-    "frontend(React + TailwindCSS)",
-    "frontend(React + Bootstrap)",
-    "backend"
+    "frontend",
+    "react",
+    "tailwindcss",
+    "bootstrap",
+    "backend",
+    "cli",
+    "full-stack",
+    "project-setup"
   ],
   "author": "Aniket Savita",
-  "license": "MIT"
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  }
 }
