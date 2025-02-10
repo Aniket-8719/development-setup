@@ -23,6 +23,6 @@ If you prefer not to install it globally, use **npx**:
 
 👤 **Aniket Savita** – *Software Developer*  
 
-🔗 [LinkedIn](https://www.linkedin.com/in/your-profile)  
-🔗 [GitHub](https://github.com/your-profile)  
+🔗 [LinkedIn](www.linkedin.com/in/aniket07013)  
+🔗 [GitHub](https://github.com/Aniket-8719)  
 
