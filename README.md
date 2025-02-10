@@ -36,5 +36,5 @@ Ensure you have the following installed before using the CLI:
 👤 **Aniket Savita** 
 
 🔗 [LinkedIn](www.linkedin.com/in/aniket07013)  
-🔗 [GitHub](https://github.com/your-profile)  
+🔗 [GitHub](https://github.com/Aniket-8719)  
 
