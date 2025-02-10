@@ -45,10 +45,13 @@ async function main() {
     fs.ensureDirSync(projectName);
 
     if (projectType === "Frontend") {
+      // Frontend Setup based on the chosen template (react_tailwindcss or react_bootstrap)
       const frontendTemplatePath = path.join(__dirname, "..", "frontend", template);
+
+      // Copy all the files from the selected template directly into the project folder 
       fs.copySync(frontendTemplatePath, path.join(process.cwd(), projectName));
 
-      spinner.succeed("✅ Frontend project setup complete!");
+      spinner.succeed(`✅ Frontend project with ${template} setup complete!`);
       console.log(chalk.yellow(`cd ${projectName}`));
       console.log(chalk.yellow("npm install"));
       console.log(chalk.yellow("npm start"));
@@ -64,10 +67,19 @@ async function main() {
       console.log(chalk.yellow("server ------------ npm run start"));
 
     } else if (projectType === "Full-Stack") {
-      const fullstackPath = path.join(__dirname, "..", "full_stack");
-      fs.copySync(fullstackPath, path.join(process.cwd(), projectName));
+      // Backend Setup
+      const backendTemplatePath = path.join(__dirname, "..", "backend");
+      fs.copySync(backendTemplatePath, path.join(process.cwd(), projectName, "backend"));
 
-      spinner.succeed("✅ Full-Stack project setup complete!");
+      // Frontend Setup based on the chosen template (react_tailwindcss or react_bootstrap)
+      const frontendTemplatePath = path.join(__dirname, "..", "frontend", template);
+      
+      // Ensure frontend folder exists and copy contents of the template to the 'frontend' folder
+      const frontendTargetPath = path.join(process.cwd(), projectName, "frontend");
+      fs.ensureDirSync(frontendTargetPath);
+      fs.copySync(frontendTemplatePath, frontendTargetPath); // Copy files inside template to 'frontend'
+
+      spinner.succeed(`✅ Full-Stack project with ${template} setup complete!`);
       console.log(chalk.yellow(`cd ${projectName}`));
       console.log(chalk.yellow("cd backend && npm install"));
       console.log(chalk.yellow("cd frontend && npm install"));
