@@ -7,7 +7,7 @@ const path = require("path");
 const chalk = require("chalk");
 
 async function main() {
-  console.log(chalk.blue("🚀 Welcome to Create React Starter!"));
+  console.log(chalk.blue("🚀 Welcome to Create frontend or backend Starter!"));
 
   // Dynamically import ora (since it's ESM)
   const { default: ora } = await import("ora");
